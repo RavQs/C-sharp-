@@ -1,0 +1,91 @@
+using System;
+
+namespace ConsoleApp5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] digits = { 72, 3, 8, 15, 4 };
+            int[] nums = { 8, 48, 5, 122, 1024 };
+           
+            SummAll(digits);
+            Console.WriteLine("");
+
+            ShowArrays(ref digits, ref nums);
+            ShowArrays2(ref digits, ref nums);
+        }
+
+        public static void ShowArrays(ref int[] digits, ref int[] nums) //Результаты массива и и замена элементов между массивами
+        {
+            foreach (int el in digits)
+                Console.Write("{0} ", el);
+            Console.WriteLine("");
+            foreach (int el in nums)
+                Console.Write("{0} ", el);
+
+            changeArrays(ref digits, ref nums);
+            Console.WriteLine("");
+
+            foreach (int el in digits)
+                Console.Write("{0} ", el);
+            Console.WriteLine("");
+            foreach (int el in nums)
+                Console.Write("{0} ", el);
+            Console.WriteLine("");
+        }
+
+            public static void ShowArrays2(ref int[] digits, ref int[] nums) //Результаты нахождения Макс. и Мин. элементов в массиве
+        { 
+            int max1 = MaxElement(digits);
+            Console.WriteLine("Max number is {0}", max1);
+            int max2 = MaxElement(nums);
+            Console.WriteLine("Max number is {0}", max2);
+            int min1 = MinArrays(digits);
+            Console.WriteLine("Min number is {0}", min1);
+            int min2 = MinArrays(nums);
+            Console.WriteLine("Min number is {0}", min2);
+        }
+
+
+        public static void SummAll(params int[] nums) //Суммирует все элементы в массиве
+        {
+            int sum = 0;
+            foreach (int el in nums)
+                sum += el;
+            Console.WriteLine("Результат суммирования элементов в массиве: {0}", sum);
+        }
+
+        public static int MaxElement(int[] numbers) // Максимальный элемент в двух массивах
+        {
+            int max1 = numbers[0];
+            foreach (int el in numbers)
+                if (el > max1)
+                    max1 = el;
+            return max1;
+        }
+
+
+        public static int MinArrays(int[] numbers) //Минимальный элемент в Массиве
+        {
+            int min = numbers[0];
+
+            for (int j = 0; j < 3; j++)
+                if (numbers[j] < min)
+                {
+                    min = numbers[j];
+                }
+            return min;
+        }
+        public static void changeArrays(ref int[] a, ref int[] b) //Замена элементов в двух массивах
+        {
+            int[] temp = new int[a.Length];
+            a.CopyTo(temp, 0);
+            Array.Clear(a, 0, a.Length);
+            b.CopyTo(a, 0);
+            Array.Clear(b, 0, b.Length);
+            temp.CopyTo(b, 0);
+
+        }
+    }
+    }
