@@ -1,0 +1,10 @@
+C:\Users\Olga\source\repos\REAL PingPong\REAL PingPong\bin\Release\REAL PingPong.exe.config
+C:\Users\Olga\source\repos\REAL PingPong\REAL PingPong\bin\Release\REAL PingPong.exe
+C:\Users\Olga\source\repos\REAL PingPong\REAL PingPong\bin\Release\REAL PingPong.pdb
+C:\Users\Olga\source\repos\REAL PingPong\REAL PingPong\obj\Release\REAL PingPong.csprojAssemblyReference.cache
+C:\Users\Olga\source\repos\REAL PingPong\REAL PingPong\obj\Release\REAL_PingPong.Form1.resources
+C:\Users\Olga\source\repos\REAL PingPong\REAL PingPong\obj\Release\REAL_PingPong.Properties.Resources.resources
+C:\Users\Olga\source\repos\REAL PingPong\REAL PingPong\obj\Release\REAL PingPong.csproj.GenerateResource.cache
+C:\Users\Olga\source\repos\REAL PingPong\REAL PingPong\obj\Release\REAL PingPong.csproj.CoreCompileInputs.cache
+C:\Users\Olga\source\repos\REAL PingPong\REAL PingPong\obj\Release\REAL PingPong.exe
+C:\Users\Olga\source\repos\REAL PingPong\REAL PingPong\obj\Release\REAL PingPong.pdb
