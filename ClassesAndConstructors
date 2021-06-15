@@ -1,0 +1,56 @@
+using System;
+
+namespace classes_n_consturctors
+{
+    class House
+    {
+        private int floors, year, count;
+        string name;
+        static void Main(string[] args)
+        {
+            House school = new House(4, "School", 2015);
+            House kidgarden = new House(2019, "kindergarten");
+            House shop = new House();
+
+            school.printAll();
+            kidgarden.printAll();
+            shop.printAll();
+        }
+        public House()
+        {
+            count++;
+            Console.WriteLine("Empty constructor!");
+        }
+
+        public House(int _year, string _name)
+        {
+            name = _name;
+            year = _year;
+        }
+
+        public House(int _year, string _name, int _floor)
+        {
+            name = _name;
+            year = _year;
+            floors = _floor;
+        }
+
+
+        public int countYears(int todayYear)
+        {
+            if (todayYear > year)
+                return todayYear - year;
+            else
+            {
+                Console.WriteLine("Дом еще не спроектирован");
+                return 0;
+            }
+        }
+
+                public void printAll()
+        {
+            Console.WriteLine($"{name} создан в {year} году");
+            Console.WriteLine($"В {name} находятся {floors} этажа");
+        }
+    }
+}
