@@ -18,7 +18,7 @@ namespace CraussMethod
             Console.WriteLine("");
 
             Console.WriteLine("Теперь процесс метода крамера:");
-            KramerSum(Sum, Num1, Num2); //Вычисоение Массивов методом Крамера
+            KramerSum(Sum, Num1, Num2); //Вычисление Массивов методом Крамера
 
             foreach (int i in Sum)
             {
